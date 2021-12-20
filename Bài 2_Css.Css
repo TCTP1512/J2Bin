@@ -1,0 +1,149 @@
+
+/* Div Tổng */
+#div_tong{
+	width: 100%;
+	height: 1000px;
+}
+#div_tren{
+	width: 100%;
+	height: 10%;
+	/*background-color: rgb(255, 32, 255);
+*/}
+#div_duoi{
+	width: 100%;
+	height: 90%;
+	/*background-color: rgb(119, 182, 219);
+*/}
+
+/* div dưới */
+#div_duoi > .trai{
+	width: 60%;
+	height: 100%;
+	/*background-color: rgb(129, 32, 255);
+*/	float: left;
+}
+#div_duoi > .trai > .tren{
+	width: 100%;
+	height: 5%;
+	/*background-color: rgb(32, 255, 125);
+*/	float: left;
+}
+#div_duoi > .trai > .duoi{
+	width: 100%;
+	height: 95%;
+	/*background-color: rgb(124, 148, 67);
+*/	float: left;
+}
+#div_duoi > .trai > .duoi > .trai{
+	width: 80%;
+	height: 100%;
+	/*background-color: rgb(19, 236, 236);
+*/	float: left;
+}
+#div_duoi > .trai > .duoi > .trai > .tren{
+	width: 100%;
+	height: 70%;
+	/*background-color: rgb(236, 135, 19);
+*/	float: left;
+}
+#div_duoi > .trai > .duoi > .trai > .tren > .trai{
+	width: 10%;
+	height: 100%;
+	/*background-color: rgb(68, 59, 48);
+*/	float: left;
+}
+#div_duoi > .trai > .duoi > .trai > .tren > .phai{
+	width: 90%;
+	height: 100%;
+	/*background-color: rgb(37, 103, 105);
+*/	float: left;
+}
+
+#div_duoi > .trai > .duoi > .trai > .duoi{
+	width: 100%;
+	height: 30%;
+	/*background-color: rgb(209, 28, 170);
+*/	float: left;
+	text-align: right;
+}
+
+#div_duoi > .trai > .duoi > .phai > .trai{
+	width: 20%;
+	height: 99.5%;
+	/*background-color: rgb(41, 205, 255);
+*/	float: left;
+	border-top: 5px dotted rgb(129, 32, 255);
+}
+#div_duoi > .trai > .duoi > .phai > .phai{
+	width: 75%;
+	height: 99.5%;
+	/*background-color: rgb(231, 122, 49);
+*/	float: left;
+	border-left: 5px dotted rgb(129, 32, 255);
+	border-top: 5px dotted rgb(129, 32, 255);
+	text-align: center;
+}
+#div_duoi > .trai > .duoi > .phai{
+	width: 20%;
+	height: 100%;
+	/*background-color: rgb(67, 17, 202);
+*/	float: left;
+}
+/* Bên Phải Dưới */
+#div_duoi > .phai{
+	width: 40%;
+	height: 100%;
+	/*background-color: rgb(255, 32, 106);
+*/	float: left;
+}
+#div_duoi > .phai > .trai{
+	width: 90%;
+	height: 100%;
+	/*background-color: rgb(219, 152, 175);
+*/	float: left;
+}
+#div_duoi > .phai > .trai > .tren{
+	width: 100%;
+	height: 20%;
+	/*background-color: rgb(230, 25, 97);
+*/	float: left;
+}
+#div_duoi > .phai > .trai > .tren > .trai{
+	width: 50%;
+	height: 100%;
+	/*background-color: rgb(25, 189, 230);
+*/	float: left;
+}
+#div_duoi > .phai > .trai > .tren > .phai{
+	width: 50%;
+	height: 100%;
+	/*background-color: rgb(169, 230, 25);
+*/	float: left;
+	text-align: right;
+}
+
+#div_duoi > .phai > .trai > .duoi{
+	width: 100%;
+	height: 80%;
+	/*background-color: rgb(219, 152, 175);
+*/	float: left;
+}
+#div_duoi > .phai > .trai > .duoi > .trai{
+	width: 70%;
+	height: 100%;
+	/*background-color: rgb(38, 192, 197);
+*/	float: left;
+}
+#div_duoi > .phai > .trai > .duoi > .phai{
+	width: 30%;
+	height: 100%;
+	/*background-color: rgb(6, 37, 175);
+*/	float: left;
+}
+
+#div_duoi > .phai > .phai{
+	width: 10%;
+	height: 100%;
+	/*background-color: rgb(144, 101, 223);
+*/	float: left;
+}
