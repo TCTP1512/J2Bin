@@ -62,8 +62,8 @@
 #div_duoi > .trai > .duoi > .trai > .duoi{
 	width: 100%;
 	height: 30%;
-	/*background-color: rgb(209, 28, 170);
-*/	float: left;
+	background-color: rgb(209, 28, 170);
+	float: left;
 	text-align: right;
 }
 
