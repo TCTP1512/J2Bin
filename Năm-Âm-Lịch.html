@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thiên Phú</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://wallpaperaccess.com/full/3781373.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        .container{
+            background-color: #ffffffaf;
+            border-radius: 7px;
+            backdrop-filter: blur(30px);
+            width: 500px;
+        }
+
+        .task{
+            background-color: #f3f5f6c0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 0px;
+            height: 30px;
+            border-radius: 7px 7px 0px 0px;
+        }
+
+        .dot{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .circle{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+        .red{
+            background-color: #FF6F6F;
+        }
+
+        .yellow{
+            background-color: #F7DA87;
+        }
+        .green{
+            background-color:  #B0DDBE;
+        }
+
+        .task .title{
+            margin-left: 5px;
+        }
+
+        .empty{
+            width: 45px;
+        }
+
+        .main{
+            padding: 10px;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .input{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            max-height: 25px;
+
+        }
+
+        .input input[type=number]{
+            border: 1px solid #e4e4e4c4;
+            outline: none;
+            background-color: #f3f5f6b2;
+            padding: 2px;
+            border-radius: 3px;
+        }
+
+        .input input[type=button]{
+            border: 1px solid #0eb7ff;
+            outline: none;
+            background-color: #00B0FC;
+            padding: 2px;
+            color: #fff;
+            border-radius: 3px;
+        }
+        .input p{
+           display: flex;
+           align-items: center;
+           background-color: #f3f5f6b2;
+           border: 1px solid #e4e4e4c4;
+           height: 20px;
+           margin: 0px;
+           padding-left: 5px;
+           padding-right: 5px;
+           width: 150px;
+           border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <div class="dot">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+            </div>
+            
+            <p class="title">Tính năm âm lịch</p>
+            <div class="empty"></div>
+        </div>
+        <div class="main">
+            <div class="input">
+                <input type="number" id="nam_duong_lich" placeholder="Năm dương lịch" (triệu)."="">
+                <input type="button" value="=&gt;" onclick="tinh_nam_am_lich()">  
+                <p id="nam_am_lich">Hello</p>
+            </div>
+        </div>
+    </div>
+<script>
+    function tinh_nam_am_lich(){
+        let nam_duong_lich = parseInt(document.getElementById('nam_duong_lich').value);
+        let so_du_can = (nam_duong_lich - 3) % 10;
+        let so_du_chi = (nam_duong_lich - 3) % 12;
+        let can;
+        let chi;
+        switch (so_du_can) {
+            case 0:
+                can = "Quý";
+                break;
+            case 1:
+                can = 'Giáp';
+                break;
+            case 2:
+                can = 'Ất';
+                break;
+            case 3:
+                can = 'Bính';
+                break;
+            case 4:
+                can = 'Đinh';
+                break;
+            case 5:
+                can = 'Mậu';
+                break;
+            case 6:
+                can = 'Kỹ';
+                break;
+            case 7:
+                can = 'Canh';
+                break;
+            case 8:
+                can = 'Thân';
+                break;
+            case 9:
+                can = 'Nhâm';
+                break;  
+            default:
+                break;
+        }
+        switch (so_du_chi) {
+            case 0:
+                chi = 'Hợi';
+                break;
+            case 1:
+                chi = 'Tý';
+                break;
+            case 2:
+                chi = 'Sửu';
+                break;
+            case 3:
+                chi = 'Dần';
+                break;
+            case 4:
+                chi = 'Mão';
+                break;
+            case 5:
+                chi = 'Thìn';
+                break;
+            case 6:
+                chi = 'Tỵ';
+                break;
+            case 7:
+                chi = 'Ngọ';
+                break;
+            case 8:
+                chi = 'Mùi';
+                break;
+            case 9:
+                chi = 'Thân';
+                break;
+            case 10:
+                chi = 'Dậu';
+                break;
+            case 11:
+                chi = 'Tuất';
+                break;
+            default:
+                break;
+        }
+        document.getElementById('nam_am_lich').innerHTML= ` ${can}  ${chi}`;
+    }  
+</script>
+</body></html>
