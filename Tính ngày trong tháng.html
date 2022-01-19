@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form>
+		Nhập Tháng
+		<br>
+		<input type="number" name="input_thang">
+		<br>
+		Nhập năm 
+		<br>
+		<input type="number" name="input_nam">
+		<br>
+		<button type="button" onclick="in_ra()">Kiểm tra xem có tối đa bao nhiêu ngày</button>
+	</form>
+	<div id="ket_qua"></div>
+	<script type="text/javascript">
+		function in_ra(){
+			let thang=parseInt(document.getElementById('input_thang').value);
+			let nam=parsenInt(document.getElementById('input_nam').value);
+			let ngay;
+			switch(thang){
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:
+					ngay = 31;
+					break;
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+					ngay = 30;
+					break;
+				case 2: //% giống mod
+					if(nam % 400 ==0 || (nam % 4 == 0 && nam % 100 !=0)){
+						ngay = 29;
+						break;
+					} else {
+						ngay = 28; 
+					}
+					break;
+				default:
+					ngay='sai';
+					break;
+			}
+			document.getElementById('ket_qua').innerHTML=`Số ngày là: `+ngay;
+		}
+	</script>
+</body>
+</html>
+<!-- parseInt: số nguyên -->
+<!-- parseFloat: số thực -->
